@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="142dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="textEnd"
+            android:textSize="40dp"
+            android:background="#fffcfc"
+            android:id="@+id/editText" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <TableLayout
+            android:layout_width="255dp"
+            android:layout_height="match_parent"
+            android:background="#313131"
+            android:layout_gravity = "center">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <!--el sisguiente boton es solo u n releno-->
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button24"
+                    android:layout_column="1"
+                    android:background="#313131"/>
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    android:id="@+id/button7"
+                    android:textSize="50dp"
+                    android:layout_column="2"
+                    android:background="#313131"
+                    android:textColor="@android:color/background_light"
+                    android:onClick="escribirNumero"/>
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8"
+                    android:id="@+id/button8"
+                    android:textSize="50dp"
+                    android:layout_column="3"
+                    android:background="#313131"
+                    android:textColor="@android:color/background_light"
+                    android:onClick="escribirNumero"/>
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9"
+                    android:id="@+id/button9"
+                    android:textSize="50dp"
+                    android:layout_column="4"
+                    android:background="#313131"
+                    android:textColor="@android:color/background_light"
+                    android:onClick="escribirNumero"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:id="@+id/button4"
+                    android:textSize="50dp"
+                    android:layout_column="2"
+                    android:background="#313131"
+                    android:textColor="@android:color/background_light"
+                    android:onClick="escribirNumero"/>
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:id="@+id/button5"
+                    android:textSize="50dp"
+                    android:layout_column="3"
+                    android:background="#313131"
+                    android:textColor="@android:color/background_light"
+                    android:onClick="escribirNumero"/>
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:id="@+id/button6"
+                    android:textSize="50dp"
+                    android:layout_column="4"
+                    android:background="#313131"
+                    android:textColor="@android:color/background_light"
+                    android:onClick="escribirNumero"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:id="@+id/button1"
+                    android:textSize="50dp"
+                    android:layout_column="2"
+                    android:background="#313131"
+                    android:textColor="@android:color/background_light"
+                    android:onClick="escribirNumero"/>
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:id="@+id/button2"
+                    android:textSize="50dp"
+                    android:layout_column="3"
+                    android:background="#313131"
+                    android:textColor="@android:color/background_light"
+                    android:onClick="escribirNumero"/>
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:id="@+id/button3"
+                    android:textSize="50dp"
+                    android:layout_column="4"
+                    android:background="#313131"
+                    android:textColor="@android:color/background_light"
+                    android:onClick="escribirNumero"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--EL PUNTO TIENE QUE CONVERTIR A LOS NUMEROS INGRESADOS A CONTINUACION EN  FLOTANTES O DOUBLE-->
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:text="."
+                    android:id="@+id/buttonPunto"
+                    android:textSize="50dp"
+                    android:layout_column="2"
+                    android:background="#313131"
+                    android:textColor="@android:color/background_light"
+                    android:onClick="escribirNumero"/>
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/buttonCero"
+                    android:textSize="50dp"
+                    android:layout_column="3"
+                    android:background="#313131"
+                    android:textColor="@android:color/background_light"
+                    android:onClick="escribirNumero"/>
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:text="="
+                    android:id="@+id/buttonIgual"
+                    android:textSize="50dp"
+                    android:layout_column="4"
+                    android:background="#313131"
+                    android:textColor="@android:color/background_light"
+                    android:onClick="igual"/>
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#727272">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:text="DEL"
+                android:id="@+id/buttonDel"
+                android:background="#727272"
+                android:textSize="30dp"
+                android:textColor="@android:color/background_light"
+                android:onClick="del"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:text="/"
+                android:id="@+id/buttonDivision"
+                android:background="#727272"
+                android:textSize="30dp"
+                android:textColor="@android:color/background_light"
+                android:onClick="division"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:text="x"
+                android:id="@+id/buttonMultiplicacion"
+                android:background="#727272"
+                android:textSize="30dp"
+                android:textColor="@android:color/background_light"
+                android:onClick="multiplicacion"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:text="-"
+                android:id="@+id/buttonResta"
+                android:background="#727272"
+                android:textSize="30dp"
+                android:textColor="@android:color/background_light"
+                android:onClick="resta"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:id="@+id/buttonSuma"
+                android:background="#727272"
+                android:textSize="30dp"
+                android:textColor="@android:color/background_light"
+                android:onClick="suma"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#05b1a1"></LinearLayout>
+
+    </TableRow>
+
+</LinearLayout>
